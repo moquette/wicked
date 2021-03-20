@@ -74,11 +74,11 @@ class App extends Component {
     return (
       <MainLayout data={app}>
         {renderHero()}
-        <div id="feature">
+        <section id="feature" className="m-0 p-0">
           {renderFeatures()}
           {renderCta()}
           {renderClients()}
-        </div>
+        </section>
         {renderAbout()}
         {renderServices()}
         {renderPortfolio()}
