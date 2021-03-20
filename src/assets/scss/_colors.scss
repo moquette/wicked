@@ -1,23 +1,20 @@
 /* colors */
-$colors:(
-    /* lightgrey: #EBEDEE */
-);
-
+$colors: (/* lightgrey: #EBEDEE */);
 
 // =============================================================================
 // Color classes
 // =============================================================================
 
 @each $name, $hex in $colors {
-    .has-background-#{"" + $name} {
-        background-color: $hex;
+  .has-background-#{"" + $name} {
+    background-color: $hex;
+  }
+  .has-text-#{"" + $name} {
+    color: $hex;
+  }
+  .has-text-#{"" + $name}-hover {
+    &:hover {
+      color: $hex;
     }
-    .has-text-#{"" + $name} {
-        color: $hex;
-    }
-    .has-text-#{"" + $name}-hover {
-        &:hover {
-            color: $hex;
-        }
-    }
+  }
 }
