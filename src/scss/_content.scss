@@ -1,16 +1,17 @@
 /* --------------------------------------------------------------
-# Hero
+# Content
 -------------------------------------------------------------- */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Muli, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.875;
+  color: var(--black);
 
   h3 {
     font-size: 24px;
@@ -25,7 +26,6 @@ body {
 section {
   padding: 100px 0;
   .section-title {
-    font-family: "Muli, Helvetica Neue", sans-serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: -1;
