@@ -1,0 +1,241 @@
+{
+  "company": {
+    "name": "Wicked",
+    "address1": "123 Any St.",
+    "address2": "Suite 2",
+    "city": "LA",
+    "state": "CA",
+    "zip": "90045",
+    "phone": "777-777-7777"
+  },
+  "header": {
+    "id": "header",
+    "title": "Wicked Header",
+    "nav": [
+      {
+        "title": "Home",
+        "link": "#top"
+      },
+      {
+        "title": "Features",
+        "link": "#feature"
+      },
+      {
+        "title": "About",
+        "link": "#about"
+      },
+      {
+        "title": "Services",
+        "link": "#services"
+      },
+      {
+        "title": "Portfolio",
+        "link": "#portfolio"
+      },
+      {
+        "title": "Testimonials",
+        "link": "#testimonials"
+      },
+      {
+        "title": "Team",
+        "link": "#team"
+      },
+      {
+        "title": "Contact",
+        "link": "#contact"
+      }
+    ],
+    "classes": "bg-white"
+  },
+  "hero": {
+    "id": "hero",
+    "title": "Wicked",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit..",
+    "classes": "bg-dark text-light"
+  },
+  "features": {
+    "id": "features",
+    "title": "Features",
+    "feature": [
+      {
+        "title": "Design",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      },
+      {
+        "title": "Content",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      },
+      {
+        "title": "Strategy",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      }
+    ],
+    "classes": "bg-white"
+  },
+  "cta": {
+    "id": "cta",
+    "title": "Free Consultation ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "button": "Contact Us Today",
+    "classes": "bg-dark text-light"
+  },
+  "clients": {
+    "id": "clients",
+    "title": "Clients",
+    "client": [
+      {
+        "title": "Client 1",
+        "image": "01.png"
+      },
+      {
+        "title": "Client 2",
+        "image": "02.png"
+      },
+      {
+        "title": "Client 3",
+        "image": "03.png"
+      },
+      {
+        "title": "Client 4",
+        "image": "04.png"
+      },
+      {
+        "title": "Client 5",
+        "image": "05.png"
+      },
+      {
+        "title": "Client 6",
+        "image": "06.png"
+      }
+    ],
+    "classes": "bg-light"
+  },
+  "about": {
+    "id": "about",
+    "title": "About",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "classes": "bg-white"
+  },
+  "services": {
+    "id": "services",
+    "title": "Services",
+    "service": [
+      {
+        "title": "Outsourcing",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      },
+      {
+        "title": "Management",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      },
+      {
+        "title": "Branding",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      },
+      {
+        "title": "Collaboration",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      }
+    ],
+    "classes": "bg-light"
+  },
+  "portfolio": {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "project": [
+      {
+        "title": "Dataviz",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+        "image": "01.jpg"
+      },
+      {
+        "title": "Docent",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+        "image": "02.jpg"
+      },
+      {
+        "title": "Iroc",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+        "image": "03.jpg"
+      },
+      {
+        "title": "LondonFX",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+        "image": "04.jpg"
+      }
+    ],
+    "classes": "bg-white text-dark"
+  },
+  "testimonials": {
+    "id": "testimonials",
+    "title": "Testimonials",
+    "quote": [
+      {
+        "title": "John Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.",
+        "image": "01.jpg"
+      },
+      {
+        "title": "Bobby Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.",
+        "image": "02.jpg"
+      },
+      {
+        "title": "Jane Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.",
+        "image": "04.jpg"
+      }
+    ],
+    "classes": "bg-light"
+  },
+  "team": {
+    "id": "team",
+    "title": "Team",
+    "member": [
+      {
+        "title": "John Doe",
+        "text": "Director",
+        "quote": "Magni qui quod omnis unde et eos fuga et exercitationem.",
+        "image": "01.jpg"
+      },
+      {
+        "title": "Mike Doe",
+        "text": "Sr. Developer",
+        "quote": "Magni qui quod omnis unde et eos fuga et exercitationem.",
+        "image": "02.jpg"
+      },
+      {
+        "title": "Karen Doe",
+        "text": "Project Manager",
+        "quote": "Magni qui quod omnis unde et eos fuga et exercitationem.",
+        "image": "03.jpg"
+      }
+    ],
+    "classes": "bg-white text-dark"
+  },
+  "contact": {
+    "id": "contact",
+    "title": "Contact",
+    "social": [
+      {
+        "title": "facebook",
+        "link": "fb.com"
+      },
+      {
+        "title": "twitter",
+        "link": "twitter.com"
+      },
+      {
+        "title": "linkedin",
+        "link": "linkedin.com"
+      }
+    ],
+    "classes": "bg-light"
+  },
+  "footer": {
+    "id": "footer",
+    "title": "Footer",
+    "text": "This is Footer",
+    "classes": "bg-dark text-light"
+  }
+}

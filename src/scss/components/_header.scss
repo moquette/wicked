@@ -1,0 +1,17 @@
+.header {
+  height: var(--header-height);
+  .navbar {
+    height: var(--header-height);
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .navbar-nav {
+      a {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--black);
+      }
+    }
+  }
+}

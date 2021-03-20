@@ -1,0 +1,23 @@
+/* --------------------------------------------------------------
+# CTA
+-------------------------------------------------------------- */
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #fff url(../../img/backgrounds/cta-bg.jpg) no-repeat top;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  padding: 100px 0;
+  text-align: center;
+
+  .h2,
+  .cta h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    background-attachment: inherit;
+    background-size: cover;
+  }
+}

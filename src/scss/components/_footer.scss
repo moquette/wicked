@@ -1,0 +1,39 @@
+.footer {
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    #fff url(../..//img/backgrounds/hero-bg.jpg) no-repeat top;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: calc(100% - var(--header-height));
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.footer p {
+  font-size: small;
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer p span {
+  color: #dc3545;
+}
+
+.footer .logo {
+  width: 100px;
+  position: absolute;
+  bottom: -4px;
+  left: calc(50% - 50px);
+}
+
+@media (max-width: 768px) {
+  .footer .footer {
+    padding: 20px 0;
+  }
+}

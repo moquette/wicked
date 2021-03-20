@@ -1,0 +1,31 @@
+/* --------------------------------------------------------------
+# Variables
+-------------------------------------------------------------- */
+:root {
+  --header-height: 60px;
+  --black: #000;
+}
+
+/* --------------------------------------------------------------
+# Vendors
+-------------------------------------------------------------- */
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "aos/dist/aos.css";
+
+/* --------------------------------------------------------------
+# Base
+-------------------------------------------------------------- */
+@import "./scss/content";
+
+/* --------------------------------------------------------------
+# Components
+-------------------------------------------------------------- */
+@import "./scss/components/header";
+@import "./scss/components/hero";
+@import "./scss/components/cta";
+@import "./scss/components/clients";
+@import "./scss/components/testimonials";
+@import "./scss/components/footer";
+@import "./scss/components/top";
+@import "./scss/components/preloader";
