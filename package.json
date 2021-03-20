@@ -21,17 +21,17 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "craco start",
     "deploy": "gh-pages -d build",
+    "build": "craco build",
     "predeploy": "yarn run build",
-    "build": "react-scripts build",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
-    "c-start": "craco start",
-    "c-build": "craco build",
     "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "c-test": "craco test",
+    "o-start": "react-scripts start",
+    "o-build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
