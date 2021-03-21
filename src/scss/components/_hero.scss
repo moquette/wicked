@@ -6,7 +6,7 @@
     #fff url("/img/backgrounds/hero-bg.jpg") no-repeat center top;
   background-attachment: fixed;
   background-size: cover;
-  padding: 17% 0;
+  padding: calc(17% + 60px) 0 calc(15%);
 
   h2 {
     font-size: 70px;
@@ -14,7 +14,6 @@
   }
 
   @media (max-width: 768px) {
-    padding: calc(17% + 60px) 0 calc(15%);
     background-attachment: inherit;
     background-size: cover;
 
