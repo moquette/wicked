@@ -14,7 +14,7 @@
     "nav": [
       {
         "title": "Home",
-        "link": "#top"
+        "link": "#hero"
       },
       {
         "title": "Features",

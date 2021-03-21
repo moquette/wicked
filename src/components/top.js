@@ -3,7 +3,7 @@ export const Top = () => {
     <a
       id="back-to-top"
       className="back-to-top scrollto d-flex align-items-center justify-content-center"
-      href="#top"
+      href="#hero"
     >
       <i className="bi bi-arrow-up-short" />
     </a>

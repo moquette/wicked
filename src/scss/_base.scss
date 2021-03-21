@@ -20,6 +20,11 @@ body {
   }
 }
 
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 3px solid var(--black);
+}
+
 /* --------------------------------------------------------------
 # Section
 -------------------------------------------------------------- */

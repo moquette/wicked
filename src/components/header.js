@@ -6,7 +6,7 @@ export const Header = (props) => {
       className="navbar navbar-light bg-white navbar-expand-md fixed-top shadow-sm"
     >
       <div className="container-fluid bg-white">
-        <a className="navbar-brand scrollto" href="#top">
+        <a className="navbar-brand scrollto" href="#hero">
           Wicked
         </a>
         <button
@@ -25,7 +25,7 @@ export const Header = (props) => {
           <ul className="navbar-nav d-flex">
             {data.nav.map((d, i) => (
               <li key={i}>
-                <a href={d.link} className="nav-link">
+                <a href={d.link} className="nav-link scrollto">
                   {d.title}
                 </a>
               </li>

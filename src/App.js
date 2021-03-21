@@ -1,3 +1,4 @@
+import smoothscroll from "smoothscroll-polyfill";
 import React, { Component } from "react";
 import JsonData from "./data/data.json";
 import MainLayout from "./layouts/MainLayout";
@@ -19,12 +20,79 @@ class App extends Component {
     this.state = JsonData;
   }
 
-  async init() {
+  init() {
+    smoothscroll.polyfill();
+
+    /**
+     * Easy selector helper function
+     */
+    const select = (el, all = false) => {
+      const element = el.trim();
+      if (all) {
+        return [...document.querySelectorAll(element)];
+      }
+      return document.querySelector(element);
+    };
+
+    /**
+     * Easy event listener function
+     */
+    const on = (type, el, listener, all = false) => {
+      const selectEl = select(el, all);
+      if (selectEl) {
+        if (all) {
+          selectEl.forEach((e) => e.addEventListener(type, listener));
+        } else {
+          selectEl.addEventListener(type, listener);
+        }
+      }
+    };
+
+    /**
+     * Easy on scroll event listener
+     */
     const onscroll = (el, listener) => {
       el.addEventListener("scroll", listener);
     };
 
-    const backtotop = document.getElementById("back-to-top");
+    /**
+     * Navbar links active state on scroll
+     */
+    const navbarlinks = select("#navbar .scrollto", true);
+    const navbarlinksActive = () => {
+      const position = window.scrollY - 0;
+      navbarlinks.forEach((navbarlink) => {
+        if (!navbarlink.hash) return;
+        const section = select(navbarlink.hash);
+        if (!section) return;
+        if (
+          position >= section.offsetTop &&
+          position <= section.offsetTop + section.offsetHeight
+        ) {
+          navbarlink.classList.add("active");
+        } else {
+          navbarlink.classList.remove("active");
+        }
+      });
+    };
+    window.addEventListener("load", navbarlinksActive);
+    onscroll(document, navbarlinksActive);
+
+    /**
+     * Scrolls to an element with header offset
+     */
+    const scrollto = (el) => {
+      const elementPos = select(el).offsetTop;
+      window.scrollTo({
+        top: elementPos + 1,
+        behavior: "smooth",
+      });
+    };
+
+    /**
+     * Back to top button
+     */
+    const backtotop = select(".back-to-top");
     if (backtotop) {
       const toggleBacktotop = () => {
         if (window.scrollY > 100) {
@@ -37,6 +105,43 @@ class App extends Component {
       onscroll(document, toggleBacktotop);
     }
 
+    /**
+     * Scroll with ofset on links with a class name .scrollto
+     */
+    on(
+      "click",
+      ".scrollto",
+      function (e) {
+        if (select(this.hash)) {
+          e.preventDefault();
+
+          const navbar = select("#navbar");
+          if (navbar.classList.contains("navbar-mobile")) {
+            navbar.classList.remove("navbar-mobile");
+            const navbarToggle = select(".mobile-nav-toggle");
+            navbarToggle.classList.toggle("bi-list");
+            navbarToggle.classList.toggle("bi-x");
+          }
+          scrollto(this.hash);
+        }
+      },
+      true
+    );
+
+    /**
+     * Scroll with ofset on page load with hash links in the url
+     */
+    window.addEventListener("load", () => {
+      if (window.location.hash) {
+        if (select(window.location.hash)) {
+          scrollto(window.location.hash);
+        }
+      }
+    });
+
+    /**
+     * Preloader
+     */
     setTimeout(() => document.getElementById("preloader").remove(), 1000);
   }
 
