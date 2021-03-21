@@ -115,12 +115,9 @@ class App extends Component {
         if (select(this.hash)) {
           e.preventDefault();
 
-          const navbar = select("#navbar");
-          if (navbar.classList.contains("navbar-mobile")) {
-            navbar.classList.remove("navbar-mobile");
-            const navbarToggle = select(".mobile-nav-toggle");
-            navbarToggle.classList.toggle("bi-list");
-            navbarToggle.classList.toggle("bi-x");
+          const navbar = select("#navbarCollapse");
+          if (navbar.classList.contains("show")) {
+            navbar.classList.remove("show");
           }
           scrollto(this.hash);
         }
