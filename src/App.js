@@ -18,12 +18,11 @@ class App extends Component {
     super(props);
     this.state = JsonData;
   }
-  componentDidMount() {
+
+  async init() {
     const onscroll = (el, listener) => {
       el.addEventListener("scroll", listener);
     };
-
-    setTimeout(() => document.getElementById("preloader").remove(), 1000);
 
     const backtotop = document.getElementById("back-to-top");
     if (backtotop) {
@@ -37,7 +36,14 @@ class App extends Component {
       window.addEventListener("load", toggleBacktotop);
       onscroll(document, toggleBacktotop);
     }
+
+    setTimeout(() => document.getElementById("preloader").remove(), 1000);
   }
+
+  componentDidMount() {
+    this.init();
+  }
+
   render() {
     const app = this.state;
 
