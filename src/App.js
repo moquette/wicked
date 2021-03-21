@@ -60,7 +60,7 @@ class App extends Component {
      */
     const navbarlinks = select("#navbar .scrollto", true);
     const navbarlinksActive = () => {
-      const position = window.scrollY - 0;
+      const position = window.scrollY + 61;
       navbarlinks.forEach((navbarlink) => {
         if (!navbarlink.hash) return;
         const section = select(navbarlink.hash);
@@ -84,7 +84,7 @@ class App extends Component {
     const scrollto = (el) => {
       const elementPos = select(el).offsetTop;
       window.scrollTo({
-        top: elementPos + 1,
+        top: elementPos + -60,
         behavior: "smooth",
       });
     };
