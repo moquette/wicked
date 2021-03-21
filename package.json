@@ -32,8 +32,6 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "craco test",
-    "o-start": "react-scripts start",
-    "o-build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
