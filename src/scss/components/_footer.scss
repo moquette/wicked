@@ -13,28 +13,27 @@
   text-align: center;
   display: grid;
   place-content: center;
-}
 
-.footer p {
-  font-size: small;
-  margin: 0;
-  font-weight: 400;
-}
+  p {
+    font-size: small;
+    margin: 0;
+    font-weight: 400;
 
-.footer p span {
-  color: #dc3545;
-}
+    span {
+      color: #dc3545;
+    }
+  }
 
-.footer .logo {
-  width: 100px;
-  position: absolute;
-  bottom: -4px;
-  left: calc(50% - 50px);
-}
+  .logo {
+    width: 100px;
+    position: absolute;
+    bottom: -4px;
+    left: calc(50% - 50px);
+  }
 
-@media (max-width: 768px) {
-  .footer .footer {
+  @media (max-width: 768px) {
     padding: 20px 0;
+
     background-attachment: inherit;
     background-size: cover;
   }
