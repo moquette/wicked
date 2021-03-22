@@ -124,12 +124,13 @@ class App extends Component {
       function (e) {
         if (select(this.hash)) {
           e.preventDefault();
-          bsCollapse.toggle();
+          bsCollapse.hide();
           scrollto(this.hash);
         }
       },
       true
     );
+
     on(
       "click",
       ".top",
@@ -141,7 +142,6 @@ class App extends Component {
       },
       true
     );
-
     on(
       "click",
       "body",
