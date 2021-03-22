@@ -16,3 +16,39 @@
     }
   }
 }
+
+.navbar-light .navbar-toggler {
+  border: none;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    height: 100%;
+    background-color: #fff;
+    padding: 70px 30px 30px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+
+  .navbar-collapse.collapsing {
+    height: 100%;
+    right: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    height: 100%;
+    right: 0;
+    transition: right 400ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: right 400ms ease-in;
+  }
+}
