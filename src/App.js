@@ -1,4 +1,6 @@
+import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
 import smoothscroll from "smoothscroll-polyfill";
+import AOS from "aos";
 import React, { Component } from "react";
 import JsonData from "./data/data.json";
 import MainLayout from "./layouts/MainLayout";
@@ -21,6 +23,9 @@ class App extends Component {
   }
 
   init() {
+    AOS.init({
+      once: true,
+    });
     smoothscroll.polyfill();
 
     /**
@@ -33,6 +38,11 @@ class App extends Component {
       }
       return document.querySelector(element);
     };
+
+    const navbar = select("#navbarCollapse");
+    const bsCollapse = new bootstrap.Collapse(navbar, {
+      toggle: false,
+    });
 
     /**
      * Easy event listener function
@@ -114,13 +124,30 @@ class App extends Component {
       function (e) {
         if (select(this.hash)) {
           e.preventDefault();
-
-          const navbar = select("#navbarCollapse");
-          if (navbar.classList.contains("show")) {
-            navbar.classList.remove("show");
-          }
+          bsCollapse.toggle();
           scrollto(this.hash);
         }
+      },
+      true
+    );
+    on(
+      "click",
+      ".back-to-top",
+      function (e) {
+        if (select(this.hash)) {
+          e.preventDefault();
+          scrollto(this.hash);
+        }
+      },
+      true
+    );
+
+    on(
+      "click",
+      "body",
+      function (e) {
+        e.preventDefault();
+        bsCollapse.hide();
       },
       true
     );
