@@ -16,6 +16,12 @@ import { Team } from "./components/team";
 import { Contact } from "./components/contact";
 import "./assets/scss/styles.scss";
 
+AOS.init({
+  once: true,
+});
+
+smoothscroll.polyfill();
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,10 +29,11 @@ class App extends Component {
   }
 
   init() {
-    AOS.init({
-      once: true,
+    const offset = document.getElementById("navbar").offsetHeight;
+    const navbar = document.getElementById("navbarCollapse");
+    const bsCollapse = new bootstrap.Collapse(navbar, {
+      toggle: false,
     });
-    smoothscroll.polyfill();
 
     /**
      * Easy selector helper function
@@ -38,11 +45,6 @@ class App extends Component {
       }
       return document.querySelector(element);
     };
-
-    const navbar = select("#navbarCollapse");
-    const bsCollapse = new bootstrap.Collapse(navbar, {
-      toggle: false,
-    });
 
     /**
      * Easy event listener function
@@ -70,14 +72,14 @@ class App extends Component {
      */
     const navbarlinks = select("#navbar .scrollto", true);
     const navbarlinksActive = () => {
-      const position = window.scrollY + 61;
+      const position = window.scrollY + offset;
       navbarlinks.forEach((navbarlink) => {
         if (!navbarlink.hash) return;
         const section = select(navbarlink.hash);
         if (!section) return;
         if (
           position >= section.offsetTop &&
-          position <= section.offsetTop + section.offsetHeight
+          position <= section.offsetTop + section.offsetHeight - 1
         ) {
           navbarlink.classList.add("active");
         } else {
@@ -94,7 +96,7 @@ class App extends Component {
     const scrollto = (el) => {
       const elementPos = select(el).offsetTop;
       window.scrollTo({
-        top: elementPos + -60,
+        top: elementPos - offset,
         behavior: "smooth",
       });
     };

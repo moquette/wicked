@@ -3,7 +3,7 @@ export const Header = (props) => {
   return (
     <nav
       id="navbar"
-      className="navbar navbar-light bg-white navbar-expand-md fixed-top shadow-sm"
+      className="navbar navbar-light bg-white navbar-expand-md fixed-top"
     >
       <div className="container-fluid bg-white shadow-sm">
         <a className="navbar-brand top" href="#hero">

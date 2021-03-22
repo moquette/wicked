@@ -1,5 +1,6 @@
 .header {
   height: var(--header-height);
+  overflow: hidden;
   .navbar {
     height: var(--header-height);
     opacity: 0.95;
