@@ -6,7 +6,7 @@ export const Header = (props) => {
       className="navbar navbar-light bg-white navbar-expand-md fixed-top shadow-sm"
     >
       <div className="container-fluid bg-white shadow-sm">
-        <a className="navbar-brand scrollto" href="#hero">
+        <a className="navbar-brand top" href="#hero">
           Wicked
         </a>
         <button

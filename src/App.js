@@ -132,7 +132,7 @@ class App extends Component {
     );
     on(
       "click",
-      ".back-to-top",
+      ".top",
       function (e) {
         if (select(this.hash)) {
           e.preventDefault();
