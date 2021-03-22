@@ -10,6 +10,7 @@ AOS.init({
   easing: "ease-in-out",
   once: true,
   mirror: false,
+  disable: "mobile",
 });
 
 ReactDOM.render(
