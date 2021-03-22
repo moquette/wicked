@@ -15,7 +15,7 @@ export const Portfolio = (props) => {
               <div className="card">
                 <img
                   className="card-img-top"
-                  src={`img/portfolio/${d.image}`}
+                  src={`./assets/images/portfolio/${d.image}`}
                   alt={d.title}
                 />
                 <div className="card-body">

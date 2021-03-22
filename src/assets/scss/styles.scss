@@ -11,21 +11,21 @@
 -------------------------------------------------------------- */
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import "aos/dist/aos.css";
+@import "~aos/dist/aos.css";
 
 /* --------------------------------------------------------------
 # Base
 -------------------------------------------------------------- */
-@import "./scss/base";
+@import "./components/base";
 
 /* --------------------------------------------------------------
 # Components
 -------------------------------------------------------------- */
-@import "./scss/components/header";
-@import "./scss/components/hero";
-@import "./scss/components/cta";
-@import "./scss/components/clients";
-@import "./scss/components/testimonials";
-@import "./scss/components/footer";
-@import "./scss/components/top";
-@import "./scss/components/preloader";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/cta";
+@import "./components/clients";
+@import "./components/testimonials";
+@import "./components/footer";
+@import "./components/top";
+@import "./components/preloader";

@@ -10,7 +10,7 @@ module.exports = {
     {
       plugin: sassResourcesLoader,
       options: {
-        resources: "./src/scss/utils/_utils.scss",
+        resources: "./src/assets/scss/utils/_utils.scss",
       },
     },
   ],

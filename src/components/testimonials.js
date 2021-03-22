@@ -15,7 +15,7 @@ export const Testimonials = (props) => {
               <div className="testimonial-image">
                 <img
                   className="card-img-top rounded-circle"
-                  src={`img/testimonials/${d.image}`}
+                  src={`./assets/images/testimonials/${d.image}`}
                   alt={d.image}
                 />
               </div>

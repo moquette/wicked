@@ -14,7 +14,7 @@ import { Portfolio } from "./components/portfolio";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/team";
 import { Contact } from "./components/contact";
-import "./App.scss";
+import "./assets/scss/styles.scss";
 
 class App extends Component {
   constructor(props) {

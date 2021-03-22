@@ -9,7 +9,7 @@ export const Team = (props) => {
             <div key={i} className="col-md-4 text-center" data-aos="zoom-in">
               <div className="py-4 border rounded">
                 <img
-                  src={`img/team/${d.image}`}
+                  src={`./assets/images/team/${d.image}`}
                   alt={d.image}
                   className="rounded-circle"
                 />

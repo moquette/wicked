@@ -8,7 +8,7 @@ export const Clients = (props) => {
             <div className="col-lg-2 col-md-4 col-4" key={i}>
               <img
                 className="img-fluid"
-                src={`./img/clients/${d.image}`}
+                src={`./assets/images/clients/${d.image}`}
                 alt={d.title}
               />
             </div>
