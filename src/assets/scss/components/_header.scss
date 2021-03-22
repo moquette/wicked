@@ -52,4 +52,8 @@
   .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: right 400ms ease-in;
   }
+
+  .navbar-nav li {
+    padding-bottom: 15px;
+  }
 }

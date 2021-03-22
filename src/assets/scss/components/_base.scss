@@ -38,7 +38,7 @@ section {
     position: relative;
   }
   .section-title:after {
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid var(--black);
     bottom: -15px;
     content: "";
     height: 40px;
