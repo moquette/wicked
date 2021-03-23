@@ -10,7 +10,9 @@
 # Vendors
 -------------------------------------------------------------- */
 @import "~bootstrap/scss/bootstrap";
-@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap-icons/font/bootstrap-icons";
+@import "~@glidejs/glide/src/assets/sass/glide.core";
+@import "~@glidejs/glide/src/assets/sass/glide.theme";
 @import "~aos/dist/aos.css";
 
 /* --------------------------------------------------------------
@@ -28,6 +30,7 @@
 @import "./components/testimonials";
 @import "./components/footer";
 @import "./components/top";
+@import "./components/glide";
 @import "./components/preloader";
 
 /* --------------------------------------------------------------
