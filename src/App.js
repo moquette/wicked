@@ -79,7 +79,7 @@ class App extends Component {
         if (!section) return;
         if (
           position >= section.offsetTop &&
-          position <= section.offsetTop + section.offsetHeight - 1
+          position <= section.offsetTop + section.offsetHeight - 2
         ) {
           navbarlink.classList.add("active");
         } else {
