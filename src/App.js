@@ -30,7 +30,6 @@ class App extends Component {
 
   init() {
     const offset = document.getElementById("navbar").offsetHeight;
-    console.log(offset);
     const navbar = document.getElementById("navbarCollapse");
     const bsCollapse = new bootstrap.Collapse(navbar, {
       toggle: false,
