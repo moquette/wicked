@@ -2,7 +2,7 @@
 # Content
 -------------------------------------------------------------- */
 body {
-  margin: 0;
+  margin: var(--header-height) 0 0;
   font-family: Muli, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -59,7 +59,6 @@ section {
 # Main
 -------------------------------------------------------------- */
 main {
-  top: -60px;
   position: relative;
   z-index: 10;
   margin-bottom: calc(100vh - var(--header-height));

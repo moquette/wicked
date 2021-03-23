@@ -3,9 +3,9 @@ export const Header = (props) => {
   return (
     <nav
       id="navbar"
-      className="navbar navbar-light bg-white navbar-expand-md fixed-top"
+      className="navbar navbar-light bg-white navbar-expand-md fixed-top shadow-sm"
     >
-      <div className="container-fluid bg-white shadow-sm">
+      <div className="container-fluid bg-white">
         <a className="navbar-brand top" href="#hero">
           Wicked
         </a>

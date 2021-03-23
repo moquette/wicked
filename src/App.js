@@ -30,6 +30,7 @@ class App extends Component {
 
   init() {
     const offset = document.getElementById("navbar").offsetHeight;
+    console.log(offset);
     const navbar = document.getElementById("navbarCollapse");
     const bsCollapse = new bootstrap.Collapse(navbar, {
       toggle: false,
@@ -72,7 +73,7 @@ class App extends Component {
      */
     const navbarlinks = select("#navbar .scrollto", true);
     const navbarlinksActive = () => {
-      const position = window.scrollY + offset;
+      const position = window.scrollY;
       navbarlinks.forEach((navbarlink) => {
         if (!navbarlink.hash) return;
         const section = select(navbarlink.hash);
@@ -96,7 +97,7 @@ class App extends Component {
     const scrollto = (el) => {
       const elementPos = select(el).offsetTop;
       window.scrollTo({
-        top: elementPos - offset,
+        top: elementPos,
         behavior: "smooth",
       });
     };
