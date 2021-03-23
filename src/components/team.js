@@ -16,7 +16,7 @@ export const Team = (props) => {
                 <div className="caption">
                   <h3 className="m-0">{d.name}</h3>
                   <p>{d.title}</p>
-                  <p className="text-muted small px-4">{d.quote}</p>
+                  <p className="small px-4">{d.quote}</p>
                 </div>
               </div>
             </div>
