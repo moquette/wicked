@@ -48,7 +48,7 @@ export const Testimonials = (props) => {
               ))}
             </ul>
           </div>
-          <div className="glide__arrows" data-glide-el="controls">
+          <div className="glide__arrows" data-glide-el="controls" hidden>
             <button
               className="glide__arrow glide__arrow--left"
               data-glide-dir="<"
@@ -61,6 +61,11 @@ export const Testimonials = (props) => {
             >
               <i className="bi bi-arrow-right-short"></i>
             </button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
           </div>
         </div>
       </div>

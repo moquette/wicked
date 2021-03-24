@@ -19,3 +19,16 @@
 .glide__arrow--right {
   right: 15px;
 }
+
+.glide__bullets {
+  transform: translateX(0);
+  left: calc(50% - 25px) !important;
+  bottom: -20px;
+
+  .glide__bullet {
+    background-color: #ccc !important;
+  }
+  .glide__bullet--active {
+    background-color: #000 !important;
+  }
+}
