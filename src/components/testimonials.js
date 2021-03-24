@@ -7,7 +7,6 @@ export const Testimonials = (props) => {
       type: "carousel",
       perView: 2,
       autoplay: 6000,
-      animationDuration: 1000,
       breakpoints: {
         768: {
           perView: 1,

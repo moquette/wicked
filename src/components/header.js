@@ -7,7 +7,7 @@ export const Header = (props) => {
     >
       <div className="container-fluid bg-white">
         <a className="navbar-brand top" href="#hero">
-          Wicked
+          Dovebox Black
         </a>
         <button
           className="navbar-toggler collapsed"

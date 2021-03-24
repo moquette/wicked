@@ -2,7 +2,7 @@
   "name": "wicked",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://wicked.moquette.us",
+  "homepage": "https://black.dovebox.org",
   "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.1",
